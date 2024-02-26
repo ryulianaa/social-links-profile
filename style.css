@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "Inter", sans-serif;
+    src: url("assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+  }
+  
+  :root {
+    /*Primary color*/
+    --Green: hsl(75, 94%, 57%);
+  
+    /*Neutral color*/
+    --neutral-White: hsl(0, 0%, 100%);
+    --neutral-Grey: hsl(0, 0%, 20%);
+    --neutral-DarkGrey: hsl(0, 0%, 12%);
+    --neutral-OffBlack: hsl(0, 0%, 8%);
+  
+    /*Font*/
+    --font-family: "Inter", sans-serif;
+  }
+  
+  /*General*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--neutral-OffBlack);
+  }
+  
+  main {
+    max-width: 45rem;
+    background-color: var(--neutral-DarkGrey);
+    margin: 5rem;
+    padding: 2rem 2rem;
+    border-radius: 1rem;
+    font-family: var(--font-family);
+  }
+  
+  .container {
+    text-align: center;
+    line-height: 2rem;
+    padding: 0rem 1rem;
+  }
+  
+  /*Figure*/
+  img {
+    max-width: 40%;
+    border-radius: 50%;
+  }
+  
+  /*Headings and paragraph*/
+  :is(h2, p) {
+    color: var(--neutral-White);
+  }
+  
+  h4 {
+    color: var(--Green);
+    font-size: 0.9rem;
+  }
+  
+  p {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /*Button*/
+  .buttoncontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .btn {
+    color: var(--neutral-White);
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    background-color: var(--neutral-Grey);
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: var(--Green);
+    color: var(--neutral-OffBlack);
+  }
+  
+  /*Footer*/
+  .attribution {
+    font-size: 0.9rem;
+    text-align: center;
+  
+    color: var(--neutral-White);
+  }
+  
+  .attribution a {
+    color: var(--Green);
+  }
+  
+  /*Mobile Version*/
+  @media screen and (max-width: 750px) {
+    main {
+      max-width: 50rem;
+      padding: 2rem 1rem;
+    }
+  }
+  
